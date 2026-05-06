@@ -55,3 +55,4 @@ An array is a fixed-size collection of elements of the _same type_. A slice is a
 ### Tuples
 
 A tuple is a fixed-size collection of values of _different types_. You can use tuples to group together related values.
+Just like JavaScript objects, tuples can be destructured to access their individual elements.

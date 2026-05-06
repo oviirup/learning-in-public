@@ -9,9 +9,18 @@ pub fn run() {
   arr[2] = 10;
   println!("Updated array: {:?}", arr);
 
+  // SLICE
   // create a slice from the array
   let slice = &arr[1..3];
   println!("Slice: {:?}", slice);
   // notice the "&" symbol, it is use to create a reference to the array,
   // it is called BORROWING
+
+  // TUPLE
+  // A tuple is a collection of values of different types
+  let person: (&str, &str, i32) = ("Nick", "Stuttgart", 30);
+  println!("{} is from {} and is {} ", person.0, person.1, person.2);
+  // similar to javascript tuples and arrays can be destructured
+  let (name, city, age) = person;
+  println!("name: {}, city: {}, age: {}", name, city, age);
 }
