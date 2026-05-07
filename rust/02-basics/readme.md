@@ -52,6 +52,9 @@ Both of them have some shared methods, but `String` has additional methods for m
 - `push`: Append a single character to a `String`.
 - `push_str`: Append a string slice to a `String`.
 
+> [!NOTE]
+> `Strings` are UTF-8 encoded, and are stored in the <ins>heap</ins>. The `&str` type is a reference to a string slice, which is stored in the <ins>stack</ins>.
+
 ### Arrays and Slices
 
 An array is a fixed-size collection of elements of the _same type_. A slice is a _dynamically sized_ view into a contiguous sequence of elements.
@@ -72,3 +75,13 @@ The loops in Rust are very similar to JavaScript or any other language. Rust has
 There are some keywords specific to loops: `break` and `continue`. The `break` keyword is used to exit a loop, while the `continue` keyword is used to skip the current iteration and move to the next one.
 
 We can also specify a label for a loop, which allows us to break out of an outer loop from within an inner loop.
+
+## Functions
+
+Functions in Rust are defined using the `fn` keyword, followed by the function name and a list of parameters. The function body is enclosed in curly braces `{}`.
+
+Functions can return a value using the `return` keyword, or by simply omitting the semicolon at the end of the last expression in the function body. We must specify the return type of the function after an arrow `->` in the function signature in case it returns a value.
+
+> [!NOTE]
+> In Rust, functions are first-class citizens, which means that they can be assigned to variables, passed as arguments to other functions, and returned from functions.
+> Local variables declared within a function (including function parameters) are stored in what is called a <ins>Stack Frame</ins>. When a function is called, a new stack frame is created, and when the function exits, the stack frame is destroyed.
