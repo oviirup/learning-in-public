@@ -1,4 +1,8 @@
-# 🦀 Variables and Types
+# 🦀 Basics
+
+This section is all about the basics of the Rust programming language. It covers the fundamental concepts and features that you need to know to get started with Rust.
+
+## Variables and Types
 
 In rust the variables are immutable by default, and have a fixed type. Variables are defined with `let` keyword. To make the variable mutable we need to use the `mut` keyword.
 
@@ -56,3 +60,15 @@ An array is a fixed-size collection of elements of the _same type_. A slice is a
 
 A tuple is a fixed-size collection of values of _different types_. You can use tuples to group together related values.
 Just like JavaScript objects, tuples can be destructured to access their individual elements.
+
+## Loops
+
+The loops in Rust are very similar to JavaScript or any other language. Rust has three types of loops:
+
+- `loop`: An infinite loop that can be exited with a `break` statement.
+- `while`: A loop that continues as long as a specified condition is true.
+- `for`: A loop that iterates over a range or an iterator.
+
+There are some keywords specific to loops: `break` and `continue`. The `break` keyword is used to exit a loop, while the `continue` keyword is used to skip the current iteration and move to the next one.
+
+We can also specify a label for a loop, which allows us to break out of an outer loop from within an inner loop.
