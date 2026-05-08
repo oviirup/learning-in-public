@@ -4,9 +4,11 @@ This section is all about the basics of the Rust programming language. It covers
 
 ## Variables and Types
 
-In rust the variables are immutable by default, and have a fixed type. Variables are defined with `let` keyword. To make the variable mutable we need to use the `mut` keyword.
+In rust the variables are immutable by default, and have a fixed type. Variables are defined with `let` keyword. To make the variable mutable we need to use the `mut` keyword. It is a convention in Rust to use _snake_case_ for variable names.
 
 Rust is a statically typed language, which means that the type of a variable must be known at compile time. The compiler can infer the type of a variable based on the value it is assigned, but we can also explicitly specify the type.
+
+There are two primitive types: _scalar_ (contains integers, float, booleans, etc.) and _compound_ types (arrays, and tuples).
 
 ### Numbers
 
@@ -16,7 +18,7 @@ Rust has several types of numbers, including integers and floating-point numbers
 - Unsigned integers: `u8`, `u16`, `u32`, `u64`, `u128`
 - Floating-point numbers: `f32`, `f64`
 
-Each number can store $2^{n-1}-1$ for signed integers and $2^n$ for unsigned integers, where `n` is the number of bits. The signed integers can store both positive and negative values, while unsigned integers can only store non-negative values.
+Each number can store $2^{n-1}-1$ for signed integers and $2^n-1$ for unsigned integers, where `n` is the number of bits. The signed integers can store both positive and negative values, while unsigned integers can only store non-negative values.
 
 By default rust uses `i32` for integers and `f64` for floating-point numbers if the type is not specified.
 
@@ -41,7 +43,7 @@ Rust has two main string types:
 
 Both of them have some shared methods, but `String` has additional methods for modifying the string, while `&str` is immutable.
 
-- `length`: Get the length of the string in bytes.
+- `len`: Get the length of the string in bytes.
 - `is_empty`: Check if the string is empty.
 - `contains`: Check if the string contains a substring.
 - `replace`: Replace occurrences of a substring with another string.
@@ -85,3 +87,12 @@ Functions can return a value using the `return` keyword, or by simply omitting t
 > [!NOTE]
 > In Rust, functions are first-class citizens, which means that they can be assigned to variables, passed as arguments to other functions, and returned from functions.
 > Local variables declared within a function (including function parameters) are stored in what is called a <ins>Stack Frame</ins>. When a function is called, a new stack frame is created, and when the function exits, the stack frame is destroyed.
+
+## Structs
+
+It is similar to class in JavaScript, but it is not a class. A Struct is a custom data type that can hold multiple values of different types. It is defined using the `struct` keyword, followed by the struct name and a list of fields. Each field has a name and a type.
+
+We can define a method for a struct using the `impl` keyword. These are functions that are associated with a struct and can access its fields.
+
+> [!NOTE]
+> Structs in Rust do not have inheritance like classes in JavaScript, but we can achieve similar functionality using traits and composition.

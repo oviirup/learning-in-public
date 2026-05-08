@@ -2,12 +2,14 @@
 // mod strings;
 // mod types;
 // mod loops;
-mod functions;
+// mod functions;
+mod structs;
 
 fn main() {
   // types::run();
   // strings::run();
   // arrays::run();
   // loops::run();
-  functions::run();
+  // functions::run();
+  structs::run();
 }
