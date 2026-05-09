@@ -3,7 +3,8 @@
 // mod types;
 // mod loops;
 // mod functions;
-mod structs;
+// mod structs;
+mod enums;
 
 fn main() {
   // types::run();
@@ -11,5 +12,6 @@ fn main() {
   // arrays::run();
   // loops::run();
   // functions::run();
-  structs::run();
+  // structs::run();
+  enums::run();
 }

@@ -96,3 +96,19 @@ We can define a method for a struct using the `impl` keyword. These are function
 
 > [!NOTE]
 > Structs in Rust do not have inheritance like classes in JavaScript, but we can achieve similar functionality using traits and composition.
+
+## Enums
+
+An enum (enumeration) is a type that can be one of several named variants. Unlike enums in TypeScript, Rust enums can carry associated data in each variant, making them much more powerful.
+
+You can use `match` to handle each variant, and the compiler enforces that all variants are covered.
+
+Enums are also used to represent optional or fallible values through two built-in types:
+
+- `Option<T>`: Represents a value that may or may not be present — either `Some(value)` or `None`.
+- `Result<T, E>`: Represents either a success `Ok(value)` or a failure `Err(error)`.
+
+We can define methods on enums using `impl`, just like structs.
+
+> [!NOTE]
+> Rust does not have `null`. Instead, the `Option<T>` enum is used wherever a value might be absent, which forces you to explicitly handle the missing case at compile time.
