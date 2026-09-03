@@ -1,6 +1,6 @@
 // Loops in Rust are very similar to loops in javascript or any other language.
 
-pub fn run() {
+fn main() {
   // let mut count: u8 = 0;
 
   /*

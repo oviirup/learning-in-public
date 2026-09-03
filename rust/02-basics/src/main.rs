@@ -1,17 +1,15 @@
-// mod arrays;
-// mod strings;
-// mod types;
-// mod loops;
-// mod functions;
-// mod structs;
-mod enums;
-
 fn main() {
-  // types::run();
-  // strings::run();
-  // arrays::run();
-  // loops::run();
-  // functions::run();
-  // structs::run();
-  enums::run();
+  println!("02-basics — each topic is a Cargo example.\n");
+  println!("From rust/02-basics:");
+  println!("  cargo run --example <name>\n");
+  println!("From the rust workspace:");
+  println!("  cargo run -p basics --example <name>\n");
+  println!("Examples:");
+  println!("  types       variables, numbers, booleans");
+  println!("  strings     String vs &str");
+  println!("  arrays      arrays, slices, tuples");
+  println!("  loops       for, while, loop, labels");
+  println!("  functions   params, returns, borrowing");
+  println!("  structs     fields, impl, methods");
+  println!("  enums       match, Option, associated data");
 }

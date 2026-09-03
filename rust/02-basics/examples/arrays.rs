@@ -1,4 +1,4 @@
-pub fn run() {
+fn main() {
   // array of 5 i8 integers
   let mut arr: [i8; 5] = [1, 2, 3, 4, 5];
   // get a value at index

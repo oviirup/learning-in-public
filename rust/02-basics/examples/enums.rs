@@ -3,7 +3,7 @@
 
 #[allow(unused)] // allow unused code since this is just a demo
 
-pub fn run() {
+fn main() {
   // 1. Basic enum with match
   enum Direction {
     North,

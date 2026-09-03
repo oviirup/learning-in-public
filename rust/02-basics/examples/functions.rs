@@ -1,7 +1,7 @@
 // Functions are declared using the `fn` keyword, followed by a name, parentheses `()`, and a body enclosed in curly braces `{}`.
 // Functions can take parameters and return values. Unlike TypeScript, Rust cannot infer the return type, so it must be explicitly specified in case the function returns a value
 
-pub fn run() {
+fn main() {
   basic();
   greeting("John Nolan");
 

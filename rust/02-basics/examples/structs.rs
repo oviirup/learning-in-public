@@ -23,7 +23,7 @@ impl Color {
   }
 }
 
-pub fn run() {
+fn main() {
   let red = Color::new(255, 0, 0);
   println!("Red color in hex: {}", red.to_hex());
   println!("Red color in RGB: {}", red.to_rgb());

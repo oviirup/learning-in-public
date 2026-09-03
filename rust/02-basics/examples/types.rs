@@ -10,7 +10,7 @@
 
 // Tuples, Array, Slices, Vectors, Strings, etc. are also available
 
-pub fn run() {
+fn main() {
   // NUMBERS
 
   // inferred as i32

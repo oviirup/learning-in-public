@@ -2,6 +2,22 @@
 
 This section is all about the basics of the Rust programming language. It covers the fundamental concepts and features that you need to know to get started with Rust.
 
+Each topic lives in `examples/` as its own program. Run one at a time:
+
+```bash
+cargo run --example enums
+```
+
+From the `rust/` workspace:
+
+```bash
+cargo run -p basics --example enums
+```
+
+Available examples: `types`, `strings`, `arrays`, `loops`, `functions`, `structs`, `enums`.
+
+`cargo run` (no `--example`) prints this list.
+
 ## Variables and Types
 
 In rust the variables are immutable by default, and have a fixed type. Variables are defined with `let` keyword. To make the variable mutable we need to use the `mut` keyword. It is a convention in Rust to use _snake_case_ for variable names.

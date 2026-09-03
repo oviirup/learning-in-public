@@ -3,7 +3,7 @@
 // &str - immutable, fixed-length string slice, stored in the binary
 // String - growable, heap-allocated string, mutable
 
-pub fn run() {
+fn main() {
   // By default, string literals are of type &str
   let a = "Hello, world!";
   println!("a: {} is a string slice (&str) of length {}", a, a.len());
